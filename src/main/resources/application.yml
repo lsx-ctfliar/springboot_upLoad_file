@@ -20,15 +20,16 @@ server:
 
 #全局参数配置图片上传的路径，，测试阶段上传到到本机路径，，后面更换为服务器路径
 #本地文件管理器地址  C:\Users\zero\Desktop 反斜杠要换成斜杠  要注意路径必须存在，，而且最后要以/结尾
-#/usr/tomcat/apache-tomcat-9.0.69/webapps/uploads/
+#/usr/tomcat/apache-tomcat-9.0.69/webapps/uploads/ nginx
+#centos挂载的路径保存的图片位置/usr/local/www/images
 files:
   upload:
-    path: C:/Users/zero/Desktop/file/
+    path: /usr/local/www/images
 
 #服务器地址   为了拼接上传好后的图片名字得到完整服务器图片访问地址
-#使用tomcat的服务器 要确保端口不会冲突，而且tomcat服务器要开启
+#使用nginx的服务器 要确保端口不会冲突，而且nginx服务器要开启
 # http://43.138.225.254:8080/uploads/
 #http://43.142.93.242:8080/uploads/
 files2:
   get:
-    path: http://43.138.225.254:8080/uploads/
+    path: http://43.138.225.254:83/images/
