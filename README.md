@@ -13,7 +13,7 @@ centos:7.2.1511部署jar包
 使用postman测试接口
 ---
 上传图片接口：
-http://43.138.225.254:84/upImage
+http://43.138.225.254:84/upFile/upImage
 
 ---
 访问图片接口：
